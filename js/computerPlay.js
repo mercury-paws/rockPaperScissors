@@ -2,4 +2,8 @@
 // use the console to make sure this is returning
 // the expected output before moving to the next step!
 
-// export function computerPlay() {}
+function computerPlay() {
+  const choices = ["Rock", "Paper", "Scissors"];
+  const randomIndex = Math.floor(Math.random() * choices.length);
+  return choices[randomIndex];
+}
