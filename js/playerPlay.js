@@ -1,8 +1,11 @@
 export function playerPlay() {
   let playerChoise;
   while (true) {
-    playerChoise = prompt("Enter Rock, Paper, or Scissors").toLowerCase();
-    if (["rock", "paper", "scissors"].includes(playerChoise)) {
+    playerChoise = prompt("Enter Rock, Paper, or Scissors");
+    if (playerChoise === null) {
+      return null;
+    }
+    if (["rock", "paper", "scissors"].includes(playerChoise.toLowerCase())) {
       return playerChoise;
       // .charAt(0).toUpperCase() + playerChoise.slice(1);
     } else {
