@@ -43,14 +43,18 @@ function game() {
     }
 
     if (playerScore > computerScore) {
+      console.log("🎉 YOU DID IT! Your Assignment is safe… for now. 🎉");
       alert("🎉 YOU DID IT! Your Assignment is safe… for now. 🎉\nBrankos Bad AI has been defeated!");
     } else if (computerScore > playerScore) {
+      console.log("💀 YOU LOSE! The Bad AI hacked your computer! 💀");
       alert("💀 YOU LOSE! The Bad AI hacked your computer! 💀\nBetter luck next time… if there even is a next time.");
     } else {
+      console.log("It's a tie! Play again to break the tie.");
       alert("It's a tie! Play again to break the tie.");
     }
     
     alert("Thanks for playing! Stay safe from the Bad AI! 🤖\nRefresh the page to play again.");
+    console.log("Thanks for playing! Stay safe from the Bad AI! 🤖");
 }
 
 game();
