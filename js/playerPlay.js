@@ -1,12 +1,13 @@
 export function playerPlay() {
-  let playerChoise;
+  let playerChoice;
   while (true) {
-    playerChoise = prompt("Enter Rock, Paper, or Scissors");
-    if (playerChoise === null) {
+    playerChoice = prompt("Enter Rock, Paper, or Scissors");
+    if (playerChoice === null) {
       return null;
     }
-    if (["rock", "paper", "scissors"].includes(playerChoise.toLowerCase())) {
-      return playerChoise;
+    playerChoice = playerChoice.trim();
+    if (["rock", "paper", "scissors"].includes(playerChoice.toLowerCase())) {
+      return playerChoice;
     } else {
       alert("Invalid input. Please enter either Rock, Paper, or Scissors");
     }
