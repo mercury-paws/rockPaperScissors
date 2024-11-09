@@ -1,4 +1,5 @@
 # rockPaperScissors Algorithm
+ReviewLink: https://mercury-paws.github.io/rockPaperScissors/
 
 1. the game starts with initialization of player's and computer's score, notification of first round and max number of rounds 5.
 2. enter the loop:
